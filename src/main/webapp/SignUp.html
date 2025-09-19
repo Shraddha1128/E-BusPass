@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SignUp Page</title>
+	<style>
+		body {
+    background: linear-gradient(to left,#B06DC4 , #3F3DBF, #B06DC4,#3F3DBF, #B06DC4);
+}
+	</style>
+</head>
+<body>
+    <br><br><br>
+    <form method="post" action="./SignUp">
+        
+	<div class="container" style="text-align:  center; margin-top: 18px; border: 2px; margin-left: 475px; margin-right: 475px; border-radius: 10px;background: linear-gradient(to right, #B06DC4 , #3F3DBF); box-shadow: 2px 3px 3px 3px  #B06DC4;">
+            <br><br>
+		<label style="font-size: 18px; text-align : left; padding-right: 40px; color: white; font-family: monospace;"><b>Enter Full Name :  </b></label>
+	<br>
+	<input type="text" name="name" style="border: 1px  ; border-radius: 8px; height: 29px; width: 200px; margin-top: 5px;" required="required">
+	<br><br>
+	<label style="font-size: 18px; text-align : left; padding-right: 45px; color: white; font-family: monospace;"><b>Enter Email-Id :  </b></label>
+	<br>
+	<input type="text" name="email" style="border: 1px  ; border-radius: 8px; height: 29px; width: 200px; margin-top: 5px;" required="required">
+	<br><br>
+	<label style="font-size: 18px; text-align : left; padding-right: 45px; color: white; font-family: monospace;"><b>Enter UserName :  </b></label>
+	<br>
+	<input type="text" name="user" style="border: 1px  ; border-radius: 8px; height: 29px; width: 200px; margin-top: 5px;" required="required">
+	<br><br>
+	<label style="font-size: 18px; text-align : left;padding-right: 47px;color: white; font-family: monospace; "><b>Enter Password :  </b></label>
+	<br>
+	<input type="text" name="pass" style="border: 1px  ; border-radius: 8px; height: 29px; width: 200px; margin-top: 5px;" required="required">
+	<br><br>
+	<label style="font-size: 18px; text-align : left; padding-right: 70px;color: white; font-family: monospace;"><b>Select Role : </b></label>
+	<br>
+	<select name="role" style="font-size: 16px; text-align : center ;border: 1px  ; border-radius: 8px; height: 34px; width: 200px; margin-top: 5px;font-family: monospace; color: #3F3DBF ;" required="required">
+	<option >Administrator</option>
+	<option>Bus Driver/Conductor</option>
+	<option>Student</option>		
+	</select>
+	<br><br><br>
+	<button type="submit" style="border: 1px  ; border-radius: 8px; height: 35px; width: 100px; margin-top: 5px; font-size: 18px; font-family: monospace; background-color:#6E078E; color : white;">Sign Up</button>
+	<br><br>
+	<p style="font-size: 15px; text-align : center; font-family: monospace; color: white; ">If Already have an account ? <a href="./index.html" style="color: white;">Login</a></p>
+	<br>
+	</div>
+	</form>
+
+</body>
+</html>

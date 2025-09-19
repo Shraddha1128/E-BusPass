@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/assets/dist/css/headers.css" rel="stylesheet">
+    <link href="bootstrap/assets/dist/css/sidebars.css" rel="stylesheet">
+    <link href="bootstrap/assets/dist/css/grid.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+  .instructions-container {
+        padding: 20px;
+        background-color: #f8f9fa; /* Light background for better readability */
+        border-radius: 20px; /* Rounded corners */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        margin-left: 0; /* Align container to the left */
+        margin-right: auto; /* Ensure the container does not shift to the right */
+        max-width: 100%;
+    }
+
+    .instructions-container h2 {
+        font-size: 1.15rem;
+        margin-bottom: 20px;
+        color: #3F3DBF; /* Color matching the overall theme */
+        font-weight: bold;
+    }
+
+    .instructions-container ol {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside; /* List numbers inside the content box */
+        font-size: 15px;
+        color: #6E078E; 
+    }
+
+    .instructions-container li {
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+
+    .instructions-container strong {
+        font-size: 15px;
+        color: #6E078E; /* Color for emphasis */
+    }
+
+    .instructions-container ul {
+        margin: 10px 0 10px 20px; /* Indentation for sub-lists */
+        padding: 0;
+        list-style-type: disc; /* Bullets for sub-lists */
+    }
+
+    .instructions-container ul li {
+        font-size: 10px;
+        color: #333; /* Darker text color for readability */
+    }
+        .nav-link.active, .nav-link.text-white {
+            color: white;
+        }
+
+        .nav-link:hover {
+            background-color: #B06DC4;
+            color: white;
+        }
+
+        .dropdown-menu-dark {
+            background-color: #B06DC4;
+        }
+
+        .sidebar-icons {
+            font-size: 25px;
+            margin: 5px;
+            padding: 5px;
+        }
+    
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .nav-link.active, .nav-link.text-white {
+            color: white; /* White text */
+        }
+
+        .nav-link:hover {
+            background-color: #B06DC4; /* Slightly lighter purple for hover */
+            color: white;
+        }
+
+        .dropdown-menu-dark {
+            background-color: #B06DC4; /* Match the sidebar color */
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="background: linear-gradient(to right,#B06DC4 ,#3F3DBF, #B06DC4  ); position: relative; margin-top: 5px;">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4" > <img src="" width=70px height=60px> <b style="color: white; font-size: 38px; padding : 5px;">E-Bus Pass</b></span>
+        </a>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page" style="border-radius: 20px; height: 45px; width: 140px; padding: 5px 43px; font-size: 25px; font-family: monospace; background-color:  #B06DC4; border : 1px white; color : white;">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" style="color: white; font-size: 20px;">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" style="color: white; font-size: 20px;">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" style="color: white; font-size: 20px;">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" style="color: white; font-size: 20px;">About</a></li>
+        </ul>
+    </header>
+    <div class="container1" style="background-color: white; border-radius: 18px;">
+        <div class="row">
+            <div class="col-3" style="text-align: left;">
+                <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 260px;height: 700px; background-color: #3F3DBF; border-radius: 18px 0 0 18px;">
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="./StudentHomePage.html" class="nav-link active" style="padding-left: 15px; border-radius: 25px; background-color:  #B06DC4">
+                                <i class="fa-solid fa-house sidebar-icons"></i><b style="font-size: 18px;">Home</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./PassForm.html" class="nav-link text-white" style="margin-top: 7px;">
+                                <i class="fa-solid fa-file-waveform sidebar-icons"></i> <b style="font-size: 18px;">E-Bus Pass Form</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./DownLoadForm" class="nav-link text-white">
+                                <i class="fa-solid fa-download sidebar-icons"></i> <b style="font-size: 18px;">Download Pass</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./ReNewPass" class="nav-link text-white">
+                                <i class="fa-solid fa-arrow-rotate-right sidebar-icons"></i> <b style="font-size: 18px;">ReNew Pass</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./UDriver" class="nav-link text-white">
+                                <i class="fa-solid fa-box-open sidebar-icons"></i><b style="font-size: 18px;">Drivers </b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./SBusRoute" class="nav-link text-white">
+                                <i class="fa-solid fa-box-open sidebar-icons"></i><b style="font-size: 18px;">Bus Routes </b>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <br><br><br>
+                    <div class="dropdown" style="padding-left : 15px;">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                            <strong><b>Profile</b></strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="col-9" style="text-align : left;">
+            <div class="instructions-container" style="margin-top: 40px; width: 865px; margin-left: 10px;">
+    <h2>10 Clear Instructions for Using the E-Bus Pass System for College Students</h2>
+    <ol>
+        <li><strong>Registration:</strong> Visit the official E-Bus Pass website or download the mobile app to register. Provide your student ID, college details, and a valid email address for verification.</li>
+        <li><strong>Document Submission:</strong> Upload required documents, including a recent passport-size photo, valid college ID, and proof of enrollment. Ensure documents are clear and legible for faster approval.</li>
+        <li><strong>Form Completion:</strong> Fill out the online application form, including personal information, contact details, and preferred bus routes. Double-check the information for accuracy before submitting.</li>
+        <li><strong>Payment:</strong> Select the appropriate pass category (monthly, quarterly, or annual). Make the payment using your preferred payment method (debit card, credit card, UPI, or net banking).</li>
+        <li><strong>Confirmation:</strong> After submission and payment, you’ll receive a confirmation email with your pass details. Your digital E-Bus Pass will be generated within 24-48 hours.</li>
+        <li><strong>Digital Pass Usage:</strong> Download your E-Bus Pass from the website or app. Carry it on your smartphone or print it out for easy scanning when boarding the bus.</li>
+        <li><strong>Bus Entry:</strong> Present your digital or printed pass to the bus conductor or scan it at the designated machine upon entry.</li>
+        <li><strong>Renewal:</strong> Renew your pass before it expires by logging into your account and selecting the "Renew Pass" option. Update any necessary information and make the renewal payment.</li>
+        <li><strong>Lost or Damaged Pass:</strong> If your pass is lost or damaged, report it on the website or app. Apply for a duplicate pass with minimal charges.</li>
+        <li><strong>Support:</strong> For any issues or queries, contact customer support through the helpline number or email provided on the website/app.</li>
+    </ol>
+</div>
+
+</div>
+
+            
+</div>
+
+            </div>
+            <br>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
