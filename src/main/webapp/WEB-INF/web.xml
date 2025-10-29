@@ -236,6 +236,14 @@
         <servlet-name>DBusRoute</servlet-name>
         <servlet-class>DBusRoute</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GeneratePassQRCodeServlet</servlet-name>
+        <servlet-class>GeneratePassQRCodeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerifyPassServlet</servlet-name>
+        <servlet-class>VerifyPassServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SignUp</servlet-name>
         <url-pattern>/SignUp</url-pattern>
@@ -471,5 +479,13 @@
     <servlet-mapping>
         <servlet-name>DBusRoute</servlet-name>
         <url-pattern>/DBusRoute</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GeneratePassQRCodeServlet</servlet-name>
+        <url-pattern>/GeneratePassQRCodeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerifyPassServlet</servlet-name>
+        <url-pattern>/VerifyPassServlet</url-pattern>
     </servlet-mapping>
 </web-app>

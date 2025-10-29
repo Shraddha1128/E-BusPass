@@ -41,6 +41,7 @@ UpdateForm1.class
 DisplayDriverForm2.class
 DataBaseConnection.class
 InsertConductor.class
+VerifyPassServlet.class
 EditBusRoute3.class
 EditForm1.class
 com\mycompany\mavenproject38\JakartaRestConfiguration.class
@@ -57,3 +58,4 @@ DeleteBusRoute2.class
 DeleteDriverForm1.class
 DisplayDriverForm1.class
 EditDriverForm2.class
+GeneratePassQRCodeServlet.class

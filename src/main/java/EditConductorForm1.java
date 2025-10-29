@@ -243,7 +243,7 @@ public class EditConductorForm1 extends HttpServlet {
             out.println("<div class=\"container\" style=\"background: linear-gradient(to right,#B06DC4 ,#3F3DBF, #B06DC4  ); position: relative; margin-top: 5px;\">\n" +
 "    <header class=\"d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom\">\n" +
 "        <a href=\"/\" class=\"d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none\">\n" +
-"            <span class=\"fs-4\" > <img src=\"\" width=70px height=60px> <b style=\"color: white; font-size: 38px; padding : 5px;\">E-Bus Pass</b></span>\n" +
+"            <span class=\"fs-4\" > <img src=\"./images/logo.png\" width=70px height=60px> <b style=\"color: white; font-size: 38px; padding : 5px;\">E-Bus Pass</b></span>\n" +
 "        </a>\n" +
 "        <ul class=\"nav nav-pills\">\n" +
 "            <li class=\"nav-item\"><a href=\"#\" class=\"nav-link active\" aria-current=\"page\" style=\"border-radius: 20px; height: 45px; width: 140px; padding: 5px 43px; font-size: 25px; font-family: monospace; background-color:  #B06DC4; border : 1px white; color : white;\">Home</a></li>\n" +
